@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class factorial{
+	public static void main (String args[]){
+		int n;
+		factorial f = new factorial();
+		Scanner input = new Scanner(System.in);
+        System.out.println("Input: ");
+        n = input.nextInt();
+		System.out.println("Output: ");
+		System.out.print(f.itung(n));
+	}
+
+	public int itung(int x){
+		if(x==1){
+			return 1;
+		}
+		else {
+			return x * itung(x-1);
+		}
+	}
+}
